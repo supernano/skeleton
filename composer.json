@@ -1,0 +1,35 @@
+{
+    "name": "supernano/skeleton",
+    "license": "MIT",
+    "type": "project",
+    "description": "Supernano framework project skeleton",
+
+    "homepage": "https://github.com/supernano/skeleton",
+
+    "scripts": {
+        "post-create-project-cmd": [
+            "Supernano\\Scripts\\Skeleton::makeTemp",
+            "Supernano\\Scripts\\Skeleton::moveTemp",
+            "Supernano\\Scripts\\Skeleton::cleanAll",
+            "Supernano\\Scripts\\Skeleton::showMessage"
+        ]
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Supernano\\Scripts\\": "./scripts"
+        }
+    },
+
+    "minimum-stability" : "dev",
+    "prefer-stable" : true,
+
+    "require": {
+        "php": ">=5.4.0",
+        "delfimov/supernano" : "^2",
+        "composer/composer" : "^1"
+    },
+
+    "require-dev" : {
+    }
+}

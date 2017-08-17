@@ -1,0 +1,16 @@
+{
+    "name": "{{ projectCode }}",
+    "license": "MIT",
+    "type": "project",
+    "description": "{{ projectName }}",
+
+    "prefer-stable" : true,
+
+    "require": {
+        "php": ">=5.4.0",
+        "delfimov/supernano" : "^2",
+    },
+
+    "require-dev" : {
+    }
+}
