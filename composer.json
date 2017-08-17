@@ -26,8 +26,7 @@
 
     "require": {
         "php": ">=5.4.0",
-        "delfimov/supernano" : "^2",
-        "composer/composer" : "^1"
+        "delfimov/supernano" : "^2"
     },
 
     "require-dev" : {

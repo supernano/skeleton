@@ -58,7 +58,7 @@ Next steps:
         ];
 
         $event->getIO()->write('Installing new project "'.$event->getComposer()->getPackage()->getName().'"...' . "\n");
-        $event->getIO()->write("Basic configuration.\n");
+        $event->getIO()->write("Basic configuration.\n\n");
 
         $code = basename(getcwd());
         $replaces['{{projectCode}}'] = $event->getIO()->ask("Site code, unique alphanumeric code [".$code."]: ", $code);
